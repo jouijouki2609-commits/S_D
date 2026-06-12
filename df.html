@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <title>Distrito Federal</title>
+    </head>
+    <body>
+        <canvas id="tela" width="600" height="400"></canvas>
+  
+        <script>
+            var tela = document.getElementById('tela');
+            var c = tela.getContext('2d');
+
+            var cx = 300;
+            var cy = 200;
+
+            
+            c.fillStyle = '#FFFFFF';
+            c.fillRect(0, 0, 600, 400);
+
+            
+            c.fillStyle = '#006A32';
+            c.fillRect(205, 105, 190, 190);
+
+           
+            c.fillStyle = '#FFCC00';
+
+       
+            c.beginPath();
+            c.moveTo(cx, 115);       
+            c.lineTo(cx + 12, 127);  
+            c.lineTo(cx + 5, 127);  
+            c.lineTo(cx + 5, 145);   
+            c.lineTo(cx + 14, 154);  
+            c.lineTo(cx + 14, 185);  
+            c.lineTo(cx - 14, 185);  
+            c.lineTo(cx - 14, 154);  
+            c.lineTo(cx - 5, 145);   
+            c.lineTo(cx - 5, 127);   
+            c.lineTo(cx - 12, 127);  
+            c.closePath();
+            c.fill();
+
+            
+            c.beginPath();
+            c.moveTo(cx, 285);      
+            c.lineTo(cx + 12, 273);
+            c.lineTo(cx + 5, 273);
+            c.lineTo(cx + 5, 255);
+            c.lineTo(cx + 14, 246);
+            c.lineTo(cx + 14, 215);
+            c.lineTo(cx - 14, 215);
+            c.lineTo(cx - 14, 246);
+            c.lineTo(cx - 5, 255);
+            c.lineTo(cx - 5, 273);
+            c.lineTo(cx - 12, 273);
+            c.closePath();
+            c.fill();
+
+            
+            c.beginPath();
+            c.moveTo(385, cy);       
+            c.lineTo(373, cy - 12);
+            c.lineTo(373, cy - 5);
+            c.lineTo(355, cy - 5);
+            c.lineTo(346, cy - 14);
+            c.lineTo(315, cy - 14);
+            c.lineTo(315, cy + 14);
+            c.lineTo(346, cy + 14);
+            c.lineTo(355, cy + 5);
+            c.lineTo(373, cy + 5);
+            c.lineTo(373, cy + 12);
+            c.closePath();
+            c.fill();
+
+            
+            c.beginPath();
+            c.moveTo(215, cy);      
+            c.lineTo(227, cy - 12);
+            c.lineTo(227, cy - 5);
+            c.lineTo(245, cy - 5);
+            c.lineTo(254, cy - 14);
+            c.lineTo(285, cy - 14);
+            c.lineTo(285, cy + 14);
+            c.lineTo(254, cy + 14);
+            c.lineTo(245, cy + 5);
+            c.lineTo(227, cy + 5);
+            c.lineTo(227, cy + 12);
+            c.closePath();
+            c.fill();
+
+            
+            c.fillStyle = '#006A32';
+            c.beginPath();
+            c.moveTo(cx, cy - 17);   
+            c.lineTo(cx + 17, cy);   
+            c.lineTo(cx, cy + 17);   
+            c.lineTo(cx - 17, cy);   
+            c.closePath();
+            c.fill();
+        </script>
+    </body>
+</html>
